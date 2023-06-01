@@ -1,0 +1,87 @@
+.bank-card {
+}
+.bank-card__container {
+}
+.bank-card__left-cards {
+}
+.cards {
+}
+.cards__title {
+}
+.cards__wrapper {
+  width: 46.9em;
+  height: 23.8em;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.cards__back,
+.cards__front {
+  width: 33.4em;
+  height: 21.4em;
+  border: 1px solid red;
+  border-radius: 0.93em;
+  position: absolute;
+}
+.cards__back {
+  right: 0;
+  bottom: 0;
+  background-color: #ececec;
+}
+.cards__back-line {
+  width: 100%;
+  height: 5em;
+  background-color: #c0c0c0;
+  position: absolute;
+  top: 3.1em;
+}
+.cards__back-cvv {
+  position: absolute;
+  /* right: 2.5em; */
+  right: 40px;
+  /* bottom: 7em; */
+  bottom: 112px;
+  /* width: 6.25em; */
+  width: 100px;
+  padding: 0.31em;
+  font-size: 2.5em;
+  text-align: center;
+}
+.cards__front {
+  /* background-color: #fff; */
+  background-color: #039cde;
+}
+.front-card {
+}
+.front-card__img {
+  height: 3.75em;
+  position: absolute;
+  top: 2.5em;
+  left: 1.9em;
+}
+.front-card__logo {
+  height: 3.1em;
+  position: absolute;
+  bottom: 2.5em;
+  right: 1.9em;
+}
+.front-card__number {
+  position: absolute;
+  width: 90%;
+  margin: 0 5%;
+  background-color: #f1f1f1;
+  font-size: 2.5em;
+  padding: 5px;
+  top: 145px;
+  outline: 0;
+}
+.front-card__user-name {
+}
+.front-card__mouth {
+}
+.front-card__year {
+}
+.bank-card__right-advertising {
+}
+.advertising {
+}

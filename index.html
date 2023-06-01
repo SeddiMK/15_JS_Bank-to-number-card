@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="null.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Bank-to-number-card</title>
   </head>
   <body>
-    <section class="block"></section>
+    <section class="bank-card">
+      <div class="bank-card__container">
+        <div class="bank-card__left-cards cards">
+          <h1 class="cards__title">Карта банка</h1>
+          <div class="cards__wrapper">
+            <div class="cards__back">
+              <div class="cards__back-line"></div>
+              <input id="cvv" type="text" class="cards__back-cvv" />
+            </div>
+            <div class="cards__front front-card">
+              <img
+                src="image/bank-logo/paypal.svg"
+                alt="Image card paypal"
+                class="front-card__img"
+              />
+              <img
+                src="image/type-card-logo/paypal.svg"
+                alt="Logo card visa"
+                class="front-card__logo"
+              />
+              <input id="card-number" type="text" class="front-card__number" />
+              <input
+                id="card-user-name"
+                type="text"
+                class="front-card__user-name"
+              />
+              <input id="card-mouth" type="number" class="front-card__mouth" />
+              <input id="card-year" type="number" class="front-card__year" />
+            </div>
+          </div>
+        </div>
+        <div class="bank-card__right-advertising advertising"></div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
