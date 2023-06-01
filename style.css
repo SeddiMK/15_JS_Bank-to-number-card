@@ -1,10 +1,11 @@
 .bank-card {
-  width: 100%;
+  width: 100vw;
 }
 .bank-card__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 0.9rem;
@@ -170,8 +171,7 @@
   }
 
   .cards__back,
-  .cards__front,
-  .front-card {
+  .cards__front {
     position: relative;
   }
   .cards__wrapper {
@@ -186,8 +186,27 @@
     margin-bottom: 2.5rem;
   }
 }
-@media (max-width: 600px) {
-  .cards__wrapper {
-    width: 20rem;
+@media (max-width: 580px) {
+  .cards__back,
+  .cards__front {
+    width: 100%;
+    margin: 1rem;
   }
+  .front-card__mouth,
+  .front-card__year {
+    width: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .front-card__logo {
+    bottom: 0.5rem;
+		right: 5%;
+  }
+  .front-card__user-name {
+    width: 90%;
+    bottom: 60px;
+    top: 240px;
+  }
+}
+
 }
