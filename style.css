@@ -1,28 +1,52 @@
 .bank-card {
+  width: 100%;
 }
 .bank-card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-itrems: center;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9rem;
 }
+.bank-card__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.9rem;
+  margin-top: 1.9rem;
+}
+.bank-cards__block {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .bank-card__left-cards {
 }
 .cards {
+  margin-bottom: 2rem;
 }
-.cards__title {
-}
+
 .cards__wrapper {
-  width: 46.9em;
-  height: 23.8em;
+  width: 46.9rem;
+  height: 23.8rem;
   position: relative;
   left: 0;
   top: 0;
 }
 .cards__back,
 .cards__front {
-  width: 33.4em;
-  height: 21.4em;
-  border: 1px solid red;
-  border-radius: 0.93em;
+  width: 33.4rem;
+  height: 21.4rem;
+  border: 1px solid gray;
+  border-radius: 0.93rem;
   position: absolute;
 }
+
 .cards__back {
   right: 0;
   bottom: 0;
@@ -30,58 +54,134 @@
 }
 .cards__back-line {
   width: 100%;
-  height: 5em;
+  height: 5rem;
   background-color: #c0c0c0;
   position: absolute;
-  top: 3.1em;
+  top: 3.1rem;
+}
+.cards__back-cvv-code {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  /* right: 2.5rem; */
+  right: 30px;
+  /* bottom: 7rem; */
+  bottom: 125px;
+  /* width: 6.25rem; */
+  width: 12.5rem;
+
+  font-size: 1.7rem;
+}
+.cards__back-cvv-text {
+  display: block;
+  margin-right: 0.9rem;
 }
 .cards__back-cvv {
-  position: absolute;
-  /* right: 2.5em; */
-  right: 40px;
-  /* bottom: 7em; */
-  bottom: 112px;
-  /* width: 6.25em; */
-  width: 100px;
-  padding: 0.31em;
-  font-size: 2.5em;
-  text-align: center;
+  width: 5rem;
+  padding: 0.5rem 0.3rem;
+  font-size: 2rem;
 }
 .cards__front {
+  z-index: 1;
   /* background-color: #fff; */
   background-color: #039cde;
 }
 .front-card {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .front-card__img {
-  height: 3.75em;
+  height: 5rem;
   position: absolute;
-  top: 2.5em;
-  left: 1.9em;
+  top: 1rem;
+  left: 1.9rem;
 }
 .front-card__logo {
-  height: 3.1em;
+  height: 3.1rem;
   position: absolute;
-  bottom: 2.5em;
-  right: 1.9em;
+  bottom: 2.5rem;
+  right: 1.9rem;
 }
-.front-card__number {
+.front-card__number,
+.front-card__user-name {
   position: absolute;
   width: 90%;
   margin: 0 5%;
   background-color: #f1f1f1;
-  font-size: 2.5em;
+  font-size: 1.7rem;
   padding: 5px;
-  top: 145px;
+  top: 110px;
   outline: 0;
 }
+.front-card__number {
+}
 .front-card__user-name {
+  /* bottom: 40px; */
+  width: 70%;
+  top: 257px;
+}
+.front-card__mouth,
+.front-card__year {
+  position: absolute;
+  background-color: #f1f1f1;
+  font-size: 1.7rem;
+  padding: 5px;
+  outline: none;
+  width: 60px;
+  text-align: center;
+  top: 173px;
+
+  left: 5%;
 }
 .front-card__mouth {
 }
 .front-card__year {
+  left: 20%;
 }
 .bank-card__right-advertising {
+  width: 19rem;
 }
 .advertising {
+}
+
+@media (max-width: 775px) {
+  .cards__wrapper {
+    width: 45.7rem;
+    left: 7px;
+  }
+  .cards__back-cvv-code {
+  }
+}
+
+@media (max-width: 768px) {
+  .bank-cards__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards__back,
+  .cards__front,
+  .front-card {
+    position: relative;
+  }
+  .cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .cards__front {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
 }

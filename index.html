@@ -11,36 +11,51 @@
   <body>
     <section class="bank-card">
       <div class="bank-card__container">
-        <div class="bank-card__left-cards cards">
-          <h1 class="cards__title">Карта банка</h1>
-          <div class="cards__wrapper">
-            <div class="cards__back">
-              <div class="cards__back-line"></div>
-              <input id="cvv" type="text" class="cards__back-cvv" />
-            </div>
-            <div class="cards__front front-card">
-              <img
-                src="image/bank-logo/paypal.svg"
-                alt="Image card paypal"
-                class="front-card__img"
-              />
-              <img
-                src="image/type-card-logo/paypal.svg"
-                alt="Logo card visa"
-                class="front-card__logo"
-              />
-              <input id="card-number" type="text" class="front-card__number" />
-              <input
-                id="card-user-name"
-                type="text"
-                class="front-card__user-name"
-              />
-              <input id="card-mouth" type="number" class="front-card__mouth" />
-              <input id="card-year" type="number" class="front-card__year" />
+        <h1 class="bank-card__title">Card bank</h1>
+        <div class="bank-cards__block">
+          <div class="bank-card__left-cards cards">
+            <div class="cards__wrapper">
+              <div class="cards__front front-card">
+                <img
+                  src="image/bank-logo/discover.svg"
+                  alt="Image card paypal"
+                  class="front-card__img"
+                />
+                <img
+                  src="image/type-card-logo/mastercard.svg"
+                  alt="Logo card visa"
+                  class="front-card__logo"
+                />
+                <input
+                  id="card-number"
+                  type="text"
+                  class="front-card__number"
+                />
+
+                <input
+                  id="card-mouth"
+                  type="number"
+                  class="front-card__mouth"
+                />
+                <input id="card-year" type="number" class="front-card__year" />
+
+                <input
+                  id="card-user-name"
+                  type="text"
+                  class="front-card__user-name"
+                />
+              </div>
+              <div class="cards__back">
+                <div class="cards__back-line"></div>
+                <div class="cards__back-cvv-code">
+                  <h3 class="cards__back-cvv-text">CVV</h3>
+                  <input id="cvv" type="text" class="cards__back-cvv" />
+                </div>
+              </div>
             </div>
           </div>
+          <div class="bank-card__right-advertising advertising"></div>
         </div>
-        <div class="bank-card__right-advertising advertising"></div>
       </div>
     </section>
     <script src="script.js"></script>
