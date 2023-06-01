@@ -5,12 +5,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itrems: center;
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 0.9rem;
 }
 .bank-card__title {
+  text-align: center;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1.9rem;
@@ -28,6 +28,7 @@
 .bank-card__left-cards {
 }
 .cards {
+  width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -164,6 +165,8 @@
   .cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .cards__back,
@@ -183,5 +186,8 @@
     margin-bottom: 2.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .cards__wrapper {
+    width: 20rem;
+  }
 }
