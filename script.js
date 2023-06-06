@@ -15,6 +15,8 @@ document.querySelector('#card-number').oninput = function () {
       document.querySelector('.front-card__logo').src = cardInfo.brandLogo;
       document.querySelector('.front-card').style.backgroundColor =
         cardInfo.backgroundColor;
+    } else {
+      alert('Такого банка не существует... \nВведите номер вашего банка');
     }
   }
 };
