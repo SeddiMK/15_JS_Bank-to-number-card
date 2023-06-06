@@ -86,8 +86,8 @@
 }
 .cards__front {
   z-index: 1;
-  /* background-color: #fff; */
-  background-color: #039cde;
+  background-color: #fff;
+  /* background-color: #039cde; */
 }
 .front-card {
   position: absolute;
